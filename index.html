@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caifunkyuh Genetics</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      color: white;
+      background: url('/images/cranmalo-capture.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    header img {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin: 0;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .subtitle {
+      font-size: 1rem;
+      color: #ccc;
+      margin-top: 8px;
+    }
+    .explore {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: #2ecc71;
+      color: black;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .explore:hover {
+      background: #27ae60;
+    }
+    #strain-library {
+      padding: 80px 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    .strain-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .strain {
+      flex: 1 1 300px;
+      max-width: 300px;
+      background: #111;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .strain img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .strain h3 {
+      margin-top: 15px;
+    }
+    .strain a {
+      color: #7fffd4;
+      text-decoration: none;
+    }
+    .strain a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      max-width: 1000px;
+      margin: 80px auto 40px;
+      text-align: center;
+      color: #aaa;
+    }
+    hr {
+      border-color: #333;
+      margin-bottom: 30px;
+    }
+    footer h3 {
+      color: #fff;
+    }
+    footer p {
+      max-width: 700px;
+      margin: 10px auto;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .social {
+      margin-bottom: 30px;
+    }
+    .social a {
+      margin: 0 10px;
+      color: #7fffd4;
+      text-decoration: none;
+    }
+    .copyright {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/images/califunkyuh-logo.png" alt="Caifunkyuh Logo">
+    <h1>Can't Fake The Funk</h1>
+    <div class="subtitle">Locally bred. Genetically gifted. Califunkyuh to the core.</div>
+    <a href="#strain-library" class="explore">🔬 Explore Strains</a>
+  </header>
+
+  <section id="strain-library">
+    <h2 style="text-align:center; font-size: 2rem; margin-bottom: 40px;">Strain Library</h2>
+
+    <div class="strain-grid">
+      <!-- Banana Swangg -->
+      <div class="strain" id="banana-swangg">
+        <img src="/images/banana-swang-words.png" alt="Banana Swangg">
+        <h3>🍌 Banana Swangg</h3>
+        <p><strong>Type:</strong> Hybrid<br>
+        <strong>Genetics:</strong> <a href="#banana-og">Banana OG</a> × <a href="#kandy18">Kandy18</a><br>
+        <strong>Flower Time:</strong> ~60 days<br>
+        <strong>Seed Type:</strong> Regular</p>
+        <p><strong>Profile:</strong> Thick, earthy, banana.</p>
+        <p><strong>THC:</strong> 29.87%<br>
+        <strong>Total Cannabinoids:</strong> 30.37%</p>
+        <p><strong>Top Terpenes:</strong><br>
+        Myrcene – 0.78%<br>
+        Caryophyllene – 0.31%<br>
+        Limonene – 0.27%</p>
+      </div>
+
+      <!-- Kandy18 -->
+      <div class="strain" id="kandy18">
+        <img src="/images/kandy18-transparent.png" alt="Kandy18">
+        <h3>🍬 Kandy18</h3>
+        <p><strong>Type:</strong> Hybrid<br>
+        <strong>Genetics:</strong> OG18 × Kandy Kush<br>
+        <strong>Flower Time:</strong> ~60 days<br>
+        <strong>Seed Type:</strong> Regular</p>
+        <p><strong>Profile:</strong> Steady, reliable, with a candy twist.</p>
+      </div>
+
+      <!-- GSR -->
+      <div class="strain" id="gsr">
+        <img src="/images/gsr-2.png" alt="GSR">
+        <h3>🧪 GSR</h3>
+        <p><strong>Type:</strong> Hybrid<br>
+        <strong>Genetics:</strong> Girl Scout Cookies (Forum Cut) × Rollex OG<br>
+        <strong>Flower Time:</strong> ~60 days<br>
+        <strong>Seed Type:</strong> Clone Only</p>
+        <p><strong>Profile:</strong> Sweet, doughy cookie funk with deep gas undertones. That classic Florida feel.</p>
+      </div>
+
+      <!-- Panhandle -->
+      <div class="strain" id="panhandle">
+        <img src="/images/panhandle.png" alt="Panhandle">
+        <h3>🧢 Panhandle</h3>
+        <p><strong>Type:</strong> Hybrid<br>
+        <strong>Genetics:</strong> <a href="#pie-crust">Pie Crust</a> × <a href="#gsr">GSR</a><br>
+        <strong>Flower Time:</strong> ~60 days<br>
+        <strong>Seed Type:</strong> Clone Only</p>
+        <p><strong>Profile:</strong> Cherry Pie leaner with an earthy twist. Loud, structured, and memorable.</p>
+      </div>
+
+      <!-- Pie Crust -->
+      <div class="strain" id="pie-crust">
+        <img src="/images/img-1725.png" alt="Pie Crust">
+        <h3>🥧 Pie Crust</h3>
+        <p><strong>Type:</strong> Hybrid<br>
+        <strong>Genetics:</strong> Cherry Pie S1<br>
+        <strong>Flower Time:</strong> ~63 days<br>
+        <strong>Seed Type:</strong> Clone Only</p>
+        <p><strong>Profile:</strong> Cherry Pie S1, purple graham cracker vibes.</p>
+      </div>
+
+      <!-- Cherry Scuffins -->
+      <div class="strain" id="cherry-scuffins">
+        <img src="/images/img-1696.jpeg" alt="Cherry Scuffins">
+        <h3>🍒 Cherry Scuffins</h3>
+        <p><strong>Type:</strong> Hybrid<br>
+        <strong>Genetics:</strong> <a href="#pie-crust">Pie Crust</a> × <a href="#kandy18">Kandy18</a><br>
+        <strong>Flower Time:</strong> ~63 days<br>
+        <strong>Seed Type:</strong> Regular</p>
+        <p><strong>Profile:</strong> A layered experience — sour cherry front end, warm dough on the finish.</p>
+        <p><strong>THC:</strong> 25.81%<br>
+        <strong>Total Cannabinoids:</strong> 27.07%</p>
+        <p><strong>Top Terpenes:</strong><br>
+        Myrcene – 0.38%<br>
+        Limonene – 0.21%<br>
+        Caryophyllene – 0.20%</p>
+      </div>
+
+      <!-- Margy's Muff -->
+      <div class="strain" id="margys-muff">
+        <img src="/images/margys-muff-white-legs-transparent.png" alt="Margy's Muff">
+        <h3>🌬️ Margy's Muff</h3>
+        <p><strong>Type:</strong> Hybrid<br>
+        <strong>Genetics:</strong> Frozen Margy × <a href="#cherry-scuffins">Cherry Scuffins</a><br>
+        <strong>Flower Time:</strong> ~60 days<br>
+        <strong>Seed Type:</strong> Regular</p>
+        <p><strong>Profile:</strong> Sour lime, earthy cherry — you're gonna feel this one in your eyes.</p>
+      </div>
+
+      <!-- Cran-Cherry -->
+      <div class="strain" id="cran-cherry">
+        <img src="/images/cran-cherry-f-transparent.png" alt="Cran-Cherry">
+        <h3>🍇 Cran-Cherry</h3>
+        <p><strong>Type:</strong> Hybrid<br>
+        <strong>Genetics:</strong> <a href="#cherry-scuffins">Cherry Scuffins</a> × <a href="#panhandle">Panhandle</a><br>
+        <strong>Flower Time:</strong> ~60 days<br>
+        <strong>Seed Type:</strong> Regular</p>
+        <p><strong>Profile:</strong> Cranberry tang with a rich cherry finish.<br>
+        Cherry Pie BX</p>
+      </div>
+
+      <!-- Stapler -->
+      <div class="strain" id="stapler">
+        <img src="/images/stapler-f-transparent.png" alt="Stapler">
+        <h3>📎 Stapler</h3>
+        <p><strong>Type:</strong> Hybrid<br>
+        <strong>Genetics:</strong> Wedding Crashers × <a href="#cherry-scuffins">Cherry Scuffins</a><br>
+        <strong>Flower Time:</strong> ~60 days<br>
+        <strong>Seed Type:</strong> Regular</p>
+        <p><strong>Profile:</strong> Short-stacked sweet purple gas — quick to the finish line.</p>
+      </div>
+
+      <!-- Frozen Margy -->
+      <div class="strain" id="frozen-margy">
+        <img src="/images/img-2190.png" alt="Frozen Margy">
+        <h3>❄️ Frozen Margy</h3>
+        <p><strong>Type:</strong> Hybrid<br>
+        <strong>Genetics:</strong> Frozen Margy (exact lineage withheld)<br>
+        <strong>Flower Time:</strong> ~60 days<br>
+        <strong>Seed Type:</strong> Regular</p>
+        <p><strong>Profile:</strong> Sour lime, earthy cherry notes — you're gonna feel this one in your eyes.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <hr>
+
+    <!-- Breeder Bio -->
+    <div style="margin-bottom: 40px;">
+      <h3>🧬 Breeder's BIO</h3>
+      <p>
+        Rooted in Florida and shaped by years of hard lessons, I've spent the better part of two decades
+        selecting plants that actually mean something. I'm not chasing hype—just building honest genetics
+        from real history, preserving what matters, and keeping the funk alive.
+      </p>
+    </div>
+
+    <!-- Contact / Social -->
+    <div class="social">
+      <a href="https://discord.gg/" target="_blank">Discord</a>
+      |
+      <a href="https://instagram.com/califunkyuh" target="_blank">Instagram</a>
+      |
+      <a href="mailto:funkyuhfarms@gmail.com">Email</a>
+    </div>
+
+    <p class="copyright">© 2025 Caifunkyuh Genetics. Can't Fake The Funk.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Califunkyuh Genetics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: white;
+            background: #000 url('/images/cranmalo-capture.jpg') no-repeat center center fixed;
+            background-size: cover;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.25);
+            z-index: -1;
+        }
+
+        header {
+            animation: fadeIn 1s ease-in-out;
+            text-align: center;
+            padding: 80px 20px 60px;
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .strain-card {
+            background: rgba(17, 17, 17, 0.75);
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 15px;
+            flex: 1 1 300px;
+            max-width: 300px;
+            background: #111;
+        }
+
+        .strain-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .strain-image {
+            transition: transform 0.3s ease;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            object-fit: contain;
+            max-height: 300px;
+        }
+
+        .strain-image:hover {
+            transform: scale(1.02);
+        }
+
+        a {
+            color: #7fffd4;
+            text-decoration: none;
+            transition: color 0.3s ease, text-shadow 0.3s ease;
+        }
+
+        a:hover {
+            color: #5fcfa4;
+            text-shadow: 0 0 8px rgba(127, 255, 212, 0.5);
+        }
+
+        a.explore {
+            transition: background 0.3s ease, transform 0.2s ease;
+            margin-top: 30px;
+            padding: 12px 24px;
+            background: #2ecc71;
+            color: black;
+            text-decoration: none;
+            border-radius: 6px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        a.explore:hover {
+            background: #27ae60;
+            transform: translateY(-2px);
+        }
+
+        h2, h3 {
+            letter-spacing: 0.5px;
+        }
+
+        h3 {
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 15px 40px !important;
+            }
+
+            h1 {
+                font-size: 1.8rem !important;
+            }
+
+            section {
+                padding: 60px 15px !important;
+            }
+
+            .strain-card {
+                margin-bottom: 30px;
+            }
+        }
+
+        .special-card {
+            border: 1px solid #444;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .special-card:hover {
+            border-color: #7fffd4;
+        }
+
+        .special-card::before {
+            content: "Limited Edition";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(46, 204, 113, 0.9);
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 4px;
+            z-index: 1;
+        }
+
+        .special-card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            animation: borderPulse 3s infinite;
+            pointer-events: none;
+        }
+
+        @keyframes borderPulse {
+            0% { border-color: rgba(127, 255, 212, 0); }
+            50% { border-color: rgba(127, 255, 212, 0.7); }
+            100% { border-color: rgba(127, 255, 212, 0); }
+        }
+
+        footer a {
+            position: relative;
+            margin: 0 10px;
+            color: #7fffd4;
+            text-decoration: none;
+        }
+
+        footer a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #7fffd4;
+            transition: width 0.3s ease;
+        }
+
+        footer a:hover::after {
+            width: 100%;
+        }
+
+        .strain-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <img src="/images/califunkyuh-logo.png" alt="Caifunkyuh Logo" style="max-width: 180px; margin-bottom: 20px;" />
+            <div style="font-size: 2.5rem; color: #7fffd4; margin: 15px auto 5px; font-family: 'Lobster', cursive; text-shadow: 0 2px 4px rgba(0,0,0,0.5);">Califunkyuh</div>
+            <h1 style="font-size: 2.2rem; margin: 5px 0 0; font-weight: 600; letter-spacing: 0.5px; font-family: 'Lobster', cursive;">Can't Fake The Funk</h1>
+            <a href="#strain-library" class="explore">🔬 Explore Strains</a>
+        </header>
+
+        <section style="padding: 60px 20px; background-color: rgba(0, 0, 0, 0.5);">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <img src="/images/jar-top.png" alt="Cannabis Jar Top View" style="max-width: 100%; border-radius: 10px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);" />
+                <h3 style="margin-top: 30px; color: #fff;">Breeder's BIO</h3>
+                <p style="margin-top: 15px; font-size: 16px; color: #ccc; max-width: 700px; margin: 0 auto; line-height: 1.6; text-align: left;">
+                    Rooted in Florida and shaped by years of hard lessons, I've spent the better part of two decades
+                    selecting plants that actually mean something. I'm not chasing hype—just building honest genetics
+                    from real history, preserving what matters, and keeping the funk alive.
+                </p>
+            </div>
+        </section>
+
+        <section id="strain-library" style="padding: 80px 20px; background-color: rgba(0, 0, 0, 0.6);">
+            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 20px; position: relative; display: inline-block; left: 50%; transform: translateX(-50%);">Strain Library</h2>
+            <div style="width: 60px; height: 3px; background: linear-gradient(to right, transparent, #2ecc71, transparent); margin: 0 auto 40px;"></div>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; color: #ccc; font-size: 16px;">
+                Explore our exclusive collection of premium cannabis strains. Each genetic offering has been
+                carefully selected and bred to deliver exceptional potency, flavor profile, and overall experience.
+            </p>
+
+            <div class="strain-container">
+                <!-- Cranmalo -->
+                <div class="strain-card special-card">
+                    <img class="strain-image" src="/images/strains/new-cranmalo-flower.jpg"
+                        alt="Cranmalo Flower"
+                        onerror="if(!this.retried){this.retried=true;this.src='/images/strains/cranmalo-flower.png'}" />
+                    <h3>Cranmalo</h3>
+                    <p><strong>Type:</strong> Hybrid<br/>
+                    <strong>Genetics:</strong> Horchata × <a href="#margys-muff" style="color:#7fffd4;">Margy's Muff</a><br/>
+                    <strong>Flower Time:</strong> ~62 days<br/>
+                    <strong>Seed Type:</strong> Regular</p>
+                    <p><strong>Profile:</strong> Cranberry up front followed by sweet gas undertones.</p>
+                    <p><strong>THC:</strong> 33.2%<br/>
+                    <strong>Total Cannabinoids:</strong> 33.4%</p>
+                    <p><strong>Top Terpenes:</strong><br/>
+                    d-Limonene – 0.908%<br/>
+                    β-Myrcene – 0.359%<br/>
+                    Linalool – 0.231%</p>
+                </div>
+
+                <!-- Cran-Cherry -->
+                <div class="strain-card">
+                    <img class="strain-image" src="/images/strains/cran-cherry-art.png"
+                        alt="Cran-Cherry"
+                        onerror="if(!this.retried){this.retried=true;this.src='/images/strains/cran_cherry_f_transparent.png'}" />
+                    <h3>Cran-Cherry</h3>
+                    <p><strong>Type:</strong> Hybrid<br/>
+                    <strong>Genetics:</strong> <a href="#cherry-scuffins" style="color:#7fffd4;">Cherry Scuffins</a> × <a href="#panhandle" style="color:#7fffd4;">Panhandle</a><br/>
+                    <strong>Flower Time:</strong> ~60 days<br/>
+                    <strong>Seed Type:</strong> Regular</p>
+                    <p><strong>Profile:</strong> Cranberry tang with a rich cherry finish.<br/>
+                    Cherry Pie BX</p>
+                </div>
+
+                <!-- Banana Swangg -->
+                <div class="strain-card">
+                    <img class="strain-image" src="/images/bswangg.jpg" alt="Banana Swangg" />
+                    <h3>Banana Swangg</h3>
+                    <p><strong>Type:</strong> Hybrid<br/>
+                    <strong>Genetics:</strong> <a href="#banana-og" style="color:#7fffd4;">Banana OG</a> × <a href="#kandy18" style="color:#7fffd4;">Kandy18</a><br/>
+                    <strong>Flower Time:</strong> ~60 days<br/>
+                    <strong>Seed Type:</strong> Regular</p>
+                    <p><strong>Profile:</strong> Thick, earthy, banana.</p>
+                    <p><strong>THC:</strong> 29.87%<br/>
+                    <strong>Total Cannabinoids:</strong> 30.37%</p>
+                    <p><strong>Top Terpenes:</strong><br/>
+                    Myrcene – 0.78%<br/>
+                    Caryophyllene – 0.31%<br/>
+                    Limonene – 0.27%</p>
+                </div>
+            </div>
+        </section>
+
+        <footer style="max-width: 1000px; margin: 80px auto 40px; text-align: center; color: #aaa;">
+            <hr style="border-color: #333; margin-bottom: 30px;" />
+            <div style="margin-bottom: 30px;">
+                <a href="https://discord.gg/" target="_blank">Discord</a>
+                |
+                <a href="https://instagram.com/califunkyuh" target="_blank">Instagram</a>
+                |
+                <a href="mailto:funkyuhfarms@gmail.com">Email</a>
+            </div>
+            <p style="font-size: 14px; color: #555;">© 2025 Caifunkyuh Genetics. Can't Fake The Funk.</p>
+        </footer>
+    </div>
+</body>
+</html>
