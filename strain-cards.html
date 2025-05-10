@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Strain Cards Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #eaeaea;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #7fffd4;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .strain-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .strain-card {
+            flex: 1 1 300px;
+            max-width: 300px;
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .strain-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .strain-image {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Califunkyuh Genetics</h1>
+        <p style="text-align: center; margin-bottom: 30px;">Strain Card Test with External Images</p>
+
+        <div class="strain-container">
+            <!-- Cranmalo -->
+            <div class="strain-card">
+                <!-- Using an external placeholder image -->
+                <img class="strain-image" src="https://placehold.co/600x450/7fffd4/111111?text=Cranmalo+Flower" alt="Cranmalo Flower">
+                <h3>Cranmalo</h3>
+                <p><strong>Type:</strong> Hybrid<br>
+                <strong>Genetics:</strong> Horchata × Margy's Muff<br>
+                <strong>Flower Time:</strong> ~62 days<br>
+                <strong>Seed Type:</strong> Regular</p>
+                <p><strong>Profile:</strong> Cranberry up front followed by sweet gas undertones.</p>
+                <p><strong>THC:</strong> 33.2%<br>
+                <strong>Total Cannabinoids:</strong> 33.4%</p>
+                <p><strong>Top Terpenes:</strong><br>
+                d-Limonene – 0.908%<br>
+                β-Myrcene – 0.359%<br>
+                Linalool – 0.231%</p>
+            </div>
+
+            <!-- Cran-Cherry -->
+            <div class="strain-card">
+                <!-- Using an external placeholder image -->
+                <img class="strain-image" src="https://placehold.co/600x450/2ecc71/111111?text=Cran-Cherry+Art" alt="Cran-Cherry Art">
+                <h3>Cran-Cherry</h3>
+                <p><strong>Type:</strong> Hybrid<br>
+                <strong>Genetics:</strong> Cherry Scuffins × Panhandle<br>
+                <strong>Flower Time:</strong> ~60 days<br>
+                <strong>Seed Type:</strong> Regular</p>
+                <p><strong>Profile:</strong> Cranberry tang with a rich cherry finish.<br>
+                Cherry Pie BX</p>
+            </div>
+
+            <!-- Banana Swangg -->
+            <div class="strain-card">
+                <!-- Using an external placeholder image -->
+                <img class="strain-image" src="https://placehold.co/600x450/f1c40f/111111?text=Banana+Swangg" alt="Banana Swangg">
+                <h3>Banana Swangg</h3>
+                <p><strong>Type:</strong> Hybrid<br>
+                <strong>Genetics:</strong> Banana OG × Kandy18<br>
+                <strong>Flower Time:</strong> ~60 days<br>
+                <strong>Seed Type:</strong> Regular</p>
+                <p><strong>Profile:</strong> Thick, earthy, banana.</p>
+                <p><strong>THC:</strong> 29.87%<br>
+                <strong>Total Cannabinoids:</strong> 30.37%</p>
+                <p><strong>Top Terpenes:</strong><br>
+                Myrcene – 0.78%<br>
+                Caryophyllene – 0.31%<br>
+                Limonene – 0.27%</p>
+            </div>
+        </div>
+
+        <footer>
+            © 2025 Califunkyuh Genetics - Can't Fake The Funk
+        </footer>
+    </div>
+</body>
+</html>
